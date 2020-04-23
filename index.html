@@ -71,8 +71,12 @@
    margin-top: 10px;
    text-align: center;
 }
-         /* Modal Content */
-         /* Add Animation */
+.grey{
+
+}
+.trying::-webkit-scrollbar {
+  display: none;
+}
       </style>
    </head>
    <body>
@@ -96,7 +100,14 @@
         'https://open.spotify.com/album/5asaxnymoPyghtKrUwJrwQ',
         'https://open.spotify.com/album/36JHipgvgoQuVg1cP7Bq61',
         'https://open.spotify.com/album/4255wGyctsYPAwcWsZs4s7',
-        'https://open.spotify.com/album/0ylicfYOxageLwo3uQxiWK'
+        'https://open.spotify.com/album/0ylicfYOxageLwo3uQxiWK',
+        'https://open.spotify.com/album/3klnCRbaZpti6j46X2YnSA',
+        'https://open.spotify.com/album/0czo1O9HGah98KpGYDEM7h',
+        'https://open.spotify.com/album/19dU6csjr0982p4J4DhwcW',
+        'https://open.spotify.com/album/64lzD00tkVkvIIzRDEpBkr',
+        'https://open.spotify.com/album/0MblndC4uP0dIOG3Z5kSFV',
+        'https://open.spotify.com/album/5YwajeuqLbgcxaF6TRU1li',
+        'https://open.spotify.com/album/1MH385W638D8zJGkuSu8EJ'
          ];
          
         
@@ -107,7 +118,14 @@
          'https://i.scdn.co/image/ab67616d0000b2735b77108583fc23a53671d817',
          'https://i.scdn.co/image/ab67616d0000b27354d924f1081b468d5ec6054c',
          'https://i.scdn.co/image/ab67616d0000b2739d0b10bd5471616926829514',
-         'https://i.scdn.co/image/ab67616d0000b273c615312f90efceff73110ae2'
+         'https://i.scdn.co/image/ab67616d0000b273c615312f90efceff73110ae2',
+         'https://i.scdn.co/image/ab67616d0000b27345ec1089c942ea508c1cc231',
+         'https://i.scdn.co/image/ab67616d0000b273cd1136ee8472145a37ff04c0',
+         'https://i.scdn.co/image/ab67616d0000b2733babe68e0555b1a89f3f1d7a',
+         'https://i.scdn.co/image/ab67616d0000b2730cd63aa50f31ff70c0516d25',
+         'https://i.scdn.co/image/ab67616d0000b2734aae755505727152873173aa',
+         'https://i.scdn.co/image/ab67616d0000b2739e9b0afac92a78f259a3c084',
+         'https://i.scdn.co/image/ab67616d0000b27310a3d62ddf8123f3a121c86e'
 
          ];
 
@@ -116,6 +134,10 @@
          check,
          check,
          half,
+         '',
+         '',
+         '',
+         '',
          '',
          '',
          '',
@@ -165,25 +187,25 @@
 
          if (imnumd < images.length && imgn != null && imgnb != null && imgnc != null) { //all rows except the last one
          
-           document.write("<style>.grid-containera {display: grid; width:20%; grid-template-columns: auto auto auto; margin-bottom: 10px;}.grid-item {text-align: center; position:relative; display: inline;} </style> <div class='grid-containera'><div class='grid-item' style='margin-right:10px;'><a href='"+lnkn+"'><img src='"+imgn+"'></a>"+on+"</div><div class='grid-item' style='margin-right:10px;'><a href='"+lnknb+"'><img src='"+imgnb+"'></a>"+onb+"</div><div class='grid-item'><a href='"+lnknc+"'><img src='"+imgnc+"'></a>"+onc+"</div></div>");
+           document.write("<style>.grid-containera {display: grid; width:20%; grid-template-columns: auto auto auto; margin-bottom: 10px;}.grid-item {text-align: center; position:relative; display: inline;} </style> <div class='grid-containera'><div class='grid-item' style='margin-right:10px;'><a href='"+lnkn+"'><img class='grey' src='"+imgn+"'></a>"+on+"</div><div class='grid-item' style='margin-right:10px;'><a href='"+lnknb+"'><img class='grey' src='"+imgnb+"'></a>"+onb+"</div><div class='grid-item'><a href='"+lnknc+"'><img class='grey' src='"+imgnc+"'></a>"+onc+"</div></div>");
          
          }
          
          else if (imnumd >= images.length && imgn != null && imgnb != null && imgnc != null){ //the last row if it has 3 images
          
-            document.write("<style>.grid-containerb {display: grid; width:20%; grid-template-columns: auto auto auto; margin-bottom: 0px;}.grid-item {text-align: center; position:relative; display: inline;}</style><div class='grid-containerb'><div class='grid-item' style='margin-right:10px;'><a href='"+lnkn+"'><img src='"+imgn+"'></a>"+on+"</div><div class='grid-item' style='margin-right:10px;'><a href='"+lnknb+"'><img src='"+imgnb+"'></a>"+onb+"</div><div class='grid-item' ><a href='"+lnknc+"'><img src='"+imgnc+"'></a>"+onc+"</div></div>");
+            document.write("<style>.grid-containerb {display: grid; width:20%; grid-template-columns: auto auto auto; margin-bottom: 0px;}.grid-item {text-align: center; position:relative; display: inline;}</style><div class='grid-containerb'><div class='grid-item' style='margin-right:10px;'><a href='"+lnkn+"'><img class='grey' src='"+imgn+"'></a>"+on+"</div><div class='grid-item' style='margin-right:10px;'><a href='"+lnknb+"'><img class='grey' src='"+imgnb+"'></a>"+onb+"</div><div class='grid-item' ><a href='"+lnknc+"'><img class='grey' src='"+imgnc+"'></a>"+onc+"</div></div>");
 
          }
          
          else if (imnumd > images.length && imgn != null && imgnb != null && imgnc == null){ //the last row if it has 2 images
          
-           document.write("<style>.grid-containerc {display: grid; width:20%; grid-template-columns: auto auto auto; margin-bottom: 0px;}.grid-item {text-align: center; position:relative; display: inline;} </style> <div class='grid-containerc'><div class='grid-item' style='margin-right:10px;'><a href='"+lnkn+"'><img src='"+imgn+"'></a>"+on+"</div><div class='grid-item' style='margin-right:10px;'><a href='"+lnknb+"'><img src='"+imgnb+"'></a>"+onb+"</div><div class='grid-item' ></div></div>");
+           document.write("<style>.grid-containerc {display: grid; width:20%; grid-template-columns: auto auto auto; margin-bottom: 0px;}.grid-item {text-align: center; position:relative; display: inline;} </style> <div class='grid-containerc'><div class='grid-item' style='margin-right:10px;'><a href='"+lnkn+"'><img class='grey' src='"+imgn+"'></a>"+on+"</div><div class='grid-item' style='margin-right:10px;'><a href='"+lnknb+"'><img class='grey' src='"+imgnb+"'></a>"+onb+"</div><div class='grid-item' ></div></div>");
          
          }
          
          else if (imnumd > images.length && imgn != null && imgnb == null && imgnc == null){ //the last row if it has 1 images
          
-          document.write("<style>.grid-containerd {display: grid; width:20%; grid-template-columns: auto auto auto;  margin-bottom: 0px;}.grid-item {text-align: center; position:relative; display: inline;} </style> <div class='grid-containerd'><div class='grid-item' style='margin-right:10px;'><a href='"+lnkn+"'><img src='"+imgn+"'></a>"+on+"</div><div class='grid-item' style='margin-right:10px;'></div><div class='grid-item' ></div></div>");
+          document.write("<style>.grid-containerd {display: grid; width:20%; grid-template-columns: auto auto auto;  margin-bottom: 0px;}.grid-item {text-align: center; position:relative; display: inline;} </style> <div class='grid-containerd'><div class='grid-item' style='margin-right:10px;'><a href='"+lnkn+"'><img class='grey' src='"+imgn+"'></a>"+on+"</div><div class='grid-item' style='margin-right:10px;'></div><div class='grid-item' ></div></div>");
          }
          
          
@@ -210,7 +232,7 @@
       <div class="album" id="randdemo" style='visibility: visible;'>
          <script>getRandomTitle();</script>
       </div>
-      <div id="alldemo" style="display: none; position: fixed;
+      <div class="trying" id="alldemo" style="display: none; position: fixed;
          left: 50%;
          top:50%;
          /* bring your own prefixes */

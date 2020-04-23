@@ -19,7 +19,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <style>
-         .fa-folder {
+         .fa-folder-o {
          padding: 20px;
          font-size: 50px;
          width: 70px;
@@ -30,10 +30,10 @@
          position: fixed;
          z-index: 999;
          top: 0;
-         left: 0px;
+         left: 10px;
          }
 
-           .fa-folder-open {
+           .fa-folder-open-o {
          padding: 20px;
          font-size: 50px;
          width: 70px;
@@ -44,7 +44,7 @@
          position: fixed;
          z-index: 999;
          top: 0;
-         left: 0px;
+         left: 10px;
          }
 
          img{
@@ -222,11 +222,11 @@
          
       </script>
       <div id="buttonz">
-      <i id="button" class="fa fa-folder"></i>
+      <i id="button" class="fa fa-folder-o"></i>
    </div>
     <script>
          $( "#buttonz").click(function() {
-         $("#button").toggleClass("fa-folder fa-folder-open");
+         $("#button").toggleClass("fa-folder-o fa-folder-open-o");
          });
       </script>
       <div class="album" id="randdemo" style='visibility: visible;'>

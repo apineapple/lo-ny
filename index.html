@@ -26,7 +26,7 @@
          height: 70px;
          text-align: center;
          text-decoration: none;
-         color: black;
+         color: white;
          position: fixed;
          z-index: 999;
          top: 0;
@@ -40,11 +40,15 @@
          height: 70px;
          text-align: center;
          text-decoration: none;
-         color: black;
+         color: white;
          position: fixed;
          z-index: 999;
          top: 0;
          left: 0px;
+         }
+
+         body{
+            background-color: black;
          }
 
          img{
@@ -57,7 +61,7 @@
          }
          a:hover{
          text-decoration: none;
-         color: black;
+         color: white;
          }
          .album{
          position: fixed;
@@ -165,7 +169,7 @@
          function getRandomTitle() {
 
          
-            document.write("<style>body{background-image: url("+lnk+");} .im{visibility:hidden;}</style><a href='"+lnk+"'><img style='width:300px; height:300px;' src='"+img+"'></a>");
+            document.write("<style>.im{visibility:hidden;}</style><a href='"+lnk+"'><img style='width:300px; height:300px;' src='"+img+"'></a>");
           document.close();
          }
          

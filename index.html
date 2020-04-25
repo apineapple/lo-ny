@@ -26,7 +26,7 @@
          height: 70px;
          text-align: center;
          text-decoration: none;
-         color: white;
+         color: black;
          position: fixed;
          z-index: 999;
          top: 0;
@@ -40,7 +40,7 @@
          height: 70px;
          text-align: center;
          text-decoration: none;
-         color: white;
+         color: black;
          position: fixed;
          z-index: 999;
          top: 0;
@@ -65,7 +65,7 @@
          }
          a:hover{
          text-decoration: none;
-         color: white;
+         color: black;
          }
          .album{
          position: fixed;
@@ -86,7 +86,7 @@
   display: none;
 }
 body{
-  background-color: black;
+  background-color: pink;
 }
       </style>
    </head>
@@ -121,7 +121,8 @@ body{
         'https://open.spotify.com/album/0MblndC4uP0dIOG3Z5kSFV',
         'https://open.spotify.com/album/5YwajeuqLbgcxaF6TRU1li',
         'https://open.spotify.com/album/1MH385W638D8zJGkuSu8EJ',
-        'https://open.spotify.com/album/3VZmVRqOvUojpd7kkV3tcH'
+        'https://open.spotify.com/album/3VZmVRqOvUojpd7kkV3tcH',
+        'https://open.spotify.com/album/186ghdlwKrevqzZdCAWGIx'
          ];
          
         
@@ -142,6 +143,7 @@ body{
          'https://i.scdn.co/image/ab67616d0000b2739e9b0afac92a78f259a3c084',
          'https://i.scdn.co/image/ab67616d0000b27310a3d62ddf8123f3a121c86e',
          'https://i.scdn.co/image/ab67616d00001e02b694bcd0c70f11b10957ba19',
+         'https://i.scdn.co/image/ab67616d00001e029522cf8b2783d1f35159ad21'
 
          ];
 
@@ -151,6 +153,7 @@ body{
          check,
          half,
          half,
+         '',
          '',
          '',
          '',
@@ -233,9 +236,8 @@ body{
          $("#button").toggleClass("fa-folder-o fa-folder-open-o");
          });
       </script>
-      <div class="album" id="randdemo" style='visibility: visible;'>
-         <img src="https://media.giphy.com/media/vxdvQ6OotyQe69fGgt/giphy.gif" style="width: 300px; height: 300px;">
-      </div>
+      <!--<div class="album" id="randdemo" style='visibility: visible;'>
+      </div>-->
       <div class="trying" id="alldemo" style="display: none; position: fixed;
          left: 50%;
          top:50%;

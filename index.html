@@ -167,13 +167,27 @@ body{
          ''
          ];
          
+         var dummy = 0;
+
+         var nummy = 0;
+
+         while (dummy < unlistened.length){
+if (unlistened [dummy]==check || unlistened [dummy]==half){
+  nummy = nummy+1;
+}
+dummy = dummy+1;
+         }
           
          var imnum = 0;
          var imnumb = 1;
          var imnumc = 2;
          var imnumd = 3;
 
- 
+         var length = images.length ;
+
+ function getAllName(){
+  document.write("<h1>"+nummy+" of "+length+"</h1>");
+ }
       
          
          
@@ -236,8 +250,9 @@ body{
          $("#button").toggleClass("fa-folder-o fa-folder-open-o");
          });
       </script>
-      <!--<div class="album" id="randdemo" style='visibility: visible;'>
-      </div>-->
+      <div class="album" id="randdemo" style='visibility: visible;'>
+          <script>getAllName();</script>
+      </div>
       <div class="trying" id="alldemo" style="display: none; position: fixed;
          left: 50%;
          top:50%;

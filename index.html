@@ -69,7 +69,7 @@
          }
          .album{
          position: fixed;
-         top: 50%;
+         bottom: 10px;
          left: 50%;
          /* bring your own prefixes */
          transform: translate(-50%, -50%);
@@ -185,7 +185,7 @@ dummy = dummy+1;
          var length = images.length ;
 
  function getAllName(){
-  document.write("<h1>"+nummy+" of "+length+"</h1>");
+  document.write("<h1 style='font-size: 30px;'>"+nummy+" of "+length+"</h1>");
  }
       
          
@@ -262,7 +262,6 @@ dummy = dummy+1;
       <script>
          $("#button").click(function(){
            $("#alldemo").toggle();
-           $("#randdemo").toggle();
          });
       </script>
    </body>
